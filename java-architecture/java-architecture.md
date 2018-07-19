@@ -20,8 +20,9 @@ java web (node.js/python)
     设计模式 
     高并发 
     分布式
-  8).前沿技术：微服务 
-    springcloud 
-    dubbo+zk
+  8).前沿技术：
+    微服务
+      springcloud栈
+      dubbo+zk+springboot+...
     kubernetes
 ```
