@@ -46,8 +46,7 @@ Java内存模型 JMM规定 抽象结构 同步操作与规则
   JDBC的线程封闭
   线程不安全类与写法
   同步容器
-  并发容器
-  J.U.C
+  并发容器J.U.C
 AQS等J.U.C组件
   CounDownLatch
   Semaphore
