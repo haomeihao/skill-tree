@@ -342,6 +342,19 @@ AQS抽象队列同步组件：
     宁可使用同步代码块，也不使用同步方法
     避免使用静态变量，如必须使用最好加上final关键字使之不可变
   3).Spring与线程安全  
+    Spring bean：
+      singleton：默认 单例对象 第一次注入创建
+      prototype：每次注入创建 
+      无状态对象 线程安全 单例就够了 性能高也不影响线程安全
+      strust2对于请求拦截是基于类的 是多例 才能线程安全
+      spring mvc对于请求拦截是基于方法的 是单例 性能更高
+  4).HashMap与ConcurrentHashMap：【重点】
+      数组+链表 JDK1.8数组+链表+红黑树
+      key -> array  hash(key)%x=idx_key 
+        位运算：
+      value -> linked
+      
+      ConcurrentHashMap：分段锁
 ```
 
 
